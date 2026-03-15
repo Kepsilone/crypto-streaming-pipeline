@@ -1,4 +1,4 @@
-# pipeline-streaming-crypto
+# Pipeline-streaming-crypto
 
 ![WIP](https://img.shields.io/badge/statut-WIP-orange)
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
