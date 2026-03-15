@@ -142,6 +142,49 @@ asyncio.run(connect())
 
 ---
 
+## Workflow Git professionnel — branches
+
+Les pros ne poussent jamais directement sur `main`. `main` est toujours stable.
+
+### Structure des branches
+```
+main     ← branche stable, toujours fonctionnelle
+└── dev  ← branche de développement quotidien
+```
+
+### Créer et pousser une branche
+```bash
+git checkout -b dev        # crée la branche dev et bascule dessus
+git push -u origin dev     # pousse la branche sur GitHub
+```
+
+### Vérifier sur quelle branche on est
+```bash
+git branch                 # la branche active est marquée *
+```
+
+### Workflow quotidien
+```bash
+git checkout dev           # toujours travailler sur dev
+
+# tu codes...
+
+git add <fichier>
+git commit -m "feat(...): ..."
+git push
+
+# quand une phase est terminée → merge sur main
+git checkout main
+git merge dev
+git push
+```
+
+### Réglage GitHub
+Définir `dev` comme branche par défaut :
+**Settings** → **Branches** → changer Default branch de `main` vers `dev`
+
+---
+
 ## Ce que je suis capable de refaire
 
 - [ ] Créer un repo GitHub et le cloner localement
@@ -150,6 +193,8 @@ asyncio.run(connect())
 - [ ] Lire un champ dans un dictionnaire Python
 - [ ] Afficher des données formatées avec un f-string
 - [ ] Committer et pousser sur GitHub
+- [ ] Créer une branche `dev` et travailler dessus
+- [ ] Merger `dev` vers `main` en fin de phase
 
 ---
 
