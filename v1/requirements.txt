@@ -1,0 +1,22 @@
+# WebSocket
+websockets==12.0
+
+# Kafka async
+aiokafka==0.11.0
+
+# Base de données — 0.30.0 requis pour Python 3.13
+asyncpg==0.30.0
+
+# Validation et config — 2.10+ requis pour Python 3.13
+pydantic==2.10.6
+pydantic-settings==2.7.1
+
+# API
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+
+# Logs
+loguru==0.7.2
+
+# Env
+python-dotenv==1.0.1
