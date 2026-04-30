@@ -39,7 +39,7 @@ Mettre à jour cette section à chaque étape terminée.
 | 4     | Validation + rejected_trades       | ✅ fait  |
 | 5     | FastAPI /health /trades/latest     | ✅ fait  |
 | 6     | Grafana dashboard                  | ✅ fait  |
-| 7     | README final                       | à faire |
+| 7     | README final                       | ✅ fait  |
 
 ---
 
